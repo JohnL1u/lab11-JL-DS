@@ -42,8 +42,6 @@ class TestCalculator(unittest.TestCase):
 
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ValueError):
-            logarithm(0, 10)
-            logarithm(-2, 4)
             logarithm(10, 0)
             logarithm(7, -4)
             logarithm(8, 1)
@@ -53,7 +51,8 @@ class TestCalculator(unittest.TestCase):
         # base == 1 should raise ValueError
         from calculator import logarithm
         with self.assertRaises(ValueError):
-            logarithm(1, 10)
+            logarithm(0, 10)
+            logarithm(-2, 4)
 
     def test_hypotenuse(self):  # 3 assertions
         # hypotenuse(a, b) = sqrt(a^2 + b^2)
