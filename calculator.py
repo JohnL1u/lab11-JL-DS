@@ -1,4 +1,6 @@
 # https://github.com/JohnL1u/lab11-JL-DS.git
+# Partner 1: John Liu
+# Partner 2: Daniel Su Liu
 """
 calculator.py
 - Defines functions used to create a simple calculator
